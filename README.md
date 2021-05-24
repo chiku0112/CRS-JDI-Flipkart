@@ -1,1 +1,1 @@
-# CRS-JEEDI-Flipkart
+# CRS-JEDI-Flipkart
