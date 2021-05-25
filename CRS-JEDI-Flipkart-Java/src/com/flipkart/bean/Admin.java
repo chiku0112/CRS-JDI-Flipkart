@@ -3,6 +3,8 @@
  */
 package com.flipkart.bean;
 
+import java.util.Date;
+
 /**
  * @author Ananya Varma
  *

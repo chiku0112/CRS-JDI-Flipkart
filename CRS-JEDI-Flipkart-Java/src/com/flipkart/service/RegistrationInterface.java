@@ -8,11 +8,15 @@ package com.flipkart.service;
  *
  */
 
+import java.sql.SQLException;
 import java.util.List;
 
 import com.flipkart.bean.Course;
 import com.flipkart.bean.Notification;
 import com.flipkart.bean.StudentGrade;
+import com.flipkart.exception.CourseLimitExceedException;
+import com.flipkart.exception.CourseNotFoundException;
+import com.flipkart.exception.SeatNotAvailableException;
 
 
 /**
@@ -34,7 +38,7 @@ public interface RegistrationInterface {
 	 * @throws CourseLimitExceedException 
 	 * @throws SQLException 
 	 */
-	public boolean addCourse(String courseCode, int studentId, List<Course> courseList) throws CourseNotFoundException, CourseLimitExceedException, SeatNotAvailableException, SQLException ;
+	public boolean addCourse(String courseCode, int studentId, List<Course> courseList) throws CourseNotFoundException, CourseLimitExceedException, SeatNotAvailableException, SQLException, CourseLimitExceedException, SeatNotAvailableException;
 	
 	/**
 	 *  Method to drop Course selected by student
@@ -45,7 +49,7 @@ public interface RegistrationInterface {
 	 * @throws CourseNotFoundException
 	 * @throws SQLException 
 	 */
-	public boolean dropCourse(String courseCode, int studentId, List<Course> registeredCourseList) throws CourseNotFoundException, SQLException;
+	public boolean dropCourse(String courseCode, int studentId, List<Course> registeredCourseList) throws CourseNotFoundException, SQLException, CourseNotFoundException, SQLException;
 	
 	/**
 	 *  Method to view the list of available courses

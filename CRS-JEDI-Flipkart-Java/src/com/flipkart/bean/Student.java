@@ -3,6 +3,8 @@
  */
 package com.flipkart.bean;
 
+import com.flipkart.constant.Role;
+
 /**
  * @author Ananya Varma
  *
@@ -13,8 +15,19 @@ public class Student extends User{
 	private int studentID;
 	private int batch;
 	private boolean isApproved;
-	
-	
+
+	/**
+	 * @param userID
+	 * @param name
+	 * @param role
+	 * @param password
+	 * @param address
+	 */
+	public Student(String userID, String name, Role role, String password, String address) {
+		super(userID, name, role, password, address);
+	}
+
+
 	/**
 	 * @return the branchName
 	 */
