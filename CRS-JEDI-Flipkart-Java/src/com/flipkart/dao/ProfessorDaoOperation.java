@@ -79,7 +79,7 @@ public class ProfessorDaoOperation implements ProfessorDaoInterface {
 		}
 		catch(SQLException e)
 		{
-			
+			System.out.println(e.getMessage());
 		}
 		finally
 		{
@@ -117,7 +117,7 @@ public class ProfessorDaoOperation implements ProfessorDaoInterface {
 		}
 		catch(SQLException e)
 		{
-			
+			System.out.println(e.getMessage());
 		}
 		finally
 		{
@@ -155,7 +155,7 @@ public class ProfessorDaoOperation implements ProfessorDaoInterface {
 		}
 		catch(SQLException e)
 		{
-			
+			System.out.println(e.getMessage());
 		}
 		finally
 		{
@@ -193,7 +193,7 @@ public class ProfessorDaoOperation implements ProfessorDaoInterface {
 		}
 		catch(SQLException e)
 		{
-			
+			System.out.println(e.getMessage());
 		}
 		finally
 		{

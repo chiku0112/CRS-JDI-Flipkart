@@ -29,13 +29,6 @@ import com.flipkart.exception.SeatNotAvailableException;
 import com.flipkart.utils.DBUtils;
 
 
-/**
- * 
- * @author JEDI-03
- * Class to implement Registration Dao Operations
- * This class communicates with the database.
- *
- */
 public class RegistrationDaoOperation implements RegistrationDaoInterface{
     
 	
@@ -93,7 +86,7 @@ public class RegistrationDaoOperation implements RegistrationDaoInterface{
 		}
 		catch (SQLException e) 
 		{
-			
+			System.out.println(e.getMessage());
 		}
 		finally
 		{
@@ -131,13 +124,13 @@ public class RegistrationDaoOperation implements RegistrationDaoInterface{
 		catch (SQLException se) 
 		{
 
-			
+			System.out.println(se.getMessage());
 
 		} 
 		catch (Exception e)
 		{
 
-			
+			System.out.println(e.getMessage());
 		}
 		finally
 		{
@@ -212,7 +205,8 @@ public class RegistrationDaoOperation implements RegistrationDaoInterface{
 		}
 		catch(Exception e)
 		{
-			
+			System.out.println(e.getClass());
+			System.out.println(e.getMessage());
 		}
 		finally
 		{
@@ -255,7 +249,7 @@ public class RegistrationDaoOperation implements RegistrationDaoInterface{
 			}
 			catch(Exception e)
 			{
-				
+				System.out.println("Exception found" + e.getMessage());
 			}
 			finally
 			{
@@ -291,11 +285,12 @@ public class RegistrationDaoOperation implements RegistrationDaoInterface{
 		}
 		catch(SQLException e)
 		{
-			
+			System.out.println(e.getErrorCode());
+			System.out.println(e.getMessage());
 		}
 		catch(Exception e)
 		{
-			
+			System.out.println(e.getMessage());
 		}
 		finally
 		{
@@ -334,11 +329,11 @@ public class RegistrationDaoOperation implements RegistrationDaoInterface{
 		}
 		catch(SQLException e)
 		{
-			
+			System.out.println(e.getMessage());
 		}
 		catch(Exception e)
 		{
-			
+			System.out.println(e.getMessage());
 		}
 		finally
 		{
@@ -379,11 +374,11 @@ public class RegistrationDaoOperation implements RegistrationDaoInterface{
 		} 
 		catch (SQLException e) 
 		{
-			
+			System.out.println(e.getMessage());
 		} 
 		catch (Exception e)
 		{
-			
+			System.out.println(e.getMessage());
 		}
 		finally
 		{
@@ -421,8 +416,7 @@ public class RegistrationDaoOperation implements RegistrationDaoInterface{
 		} 
 		catch (SQLException e) 
 		{
-			
-
+			System.out.println(e.getMessage());
 		} 
 		finally
 		{
@@ -455,7 +449,7 @@ public class RegistrationDaoOperation implements RegistrationDaoInterface{
 		} 
 		catch (SQLException e) 
 		{
-			
+			System.out.println(e.getMessage());
 
 		} 
 		finally
@@ -484,8 +478,7 @@ public class RegistrationDaoOperation implements RegistrationDaoInterface{
 		} 
 		catch (SQLException e) 
 		{
-			
-
+			System.out.println(e.getMessage());
 		} 
 		finally
 		{

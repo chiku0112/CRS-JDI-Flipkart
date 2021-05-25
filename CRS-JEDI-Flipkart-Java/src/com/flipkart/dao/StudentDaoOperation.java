@@ -16,8 +16,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-import org.apache.log4j.Logger;
-
 import com.flipkart.bean.Student;
 import com.flipkart.client.CRSApplication;
 import com.flipkart.constant.SQLQueriesConstants;
@@ -25,12 +23,7 @@ import com.flipkart.exception.StudentNotRegisteredException;
 import com.flipkart.service.StudentOperation;
 import com.flipkart.utils.DBUtils;
 
-/**
- * 
- * @author JEDI-03
- * Class to implement Student Dao Operations
- *
- */
+
 public class StudentDaoOperation implements StudentDaoInterface {
 	
 	private static volatile StudentDaoOperation instance=null;
@@ -137,7 +130,7 @@ public class StudentDaoOperation implements StudentDaoInterface {
 		}
 		catch(SQLException e)
 		{
-			
+			System.out.println(e.getMessage());
 		}
 		
 		return 0;
@@ -164,7 +157,7 @@ public class StudentDaoOperation implements StudentDaoInterface {
 		}
 		catch(SQLException e)
 		{
-			
+			System.out.println(e.getMessage());
 		}
 		
 		return false;

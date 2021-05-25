@@ -19,21 +19,12 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.UUID;
 
-
-
 import com.flipkart.constant.ModeOfPayment;
 import com.flipkart.constant.NotificationType;
 import com.flipkart.constant.SQLQueriesConstants;
 import com.flipkart.service.NotificationOperation;
 import com.flipkart.utils.DBUtils;
 
-/**
- * 
- * @author JEDI-03
- * Class to implement Notification Dao Operations
- * Used for adding the notification to the database
- *
- */
 public class NotificationDaoOperation implements NotificationDaoInterface{
 	private static volatile NotificationDaoOperation instance=null;
 	
@@ -96,11 +87,21 @@ public class NotificationDaoOperation implements NotificationDaoInterface{
 			if(results.next())
 				notificationId=results.getInt(1);
 			
-			
+			switch(type)
+			{
+				case REGISTRATION:
+					System.out.println("Registration successfull. Administration will verify the details and approve it!");
+					break;
+				case REGISTRATION_APPROVAL:
+					System.out.println("Student with id "+studentId+" has been approved!");
+					break;
+				case PAYMENT:
+					System.out.println("Student with id "+studentId+" fee has been paid");
+			}
 			
 		}
 		catch(SQLException ex)
-		{
+		{	
 			throw ex;
 		}
 		return notificationId;
