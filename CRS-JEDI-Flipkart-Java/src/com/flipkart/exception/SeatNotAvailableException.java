@@ -2,7 +2,7 @@ package com.flipkart.exception;
 
 /**
  * Exception to check if seats are available for course registration
- * @author JEDI-03
+ * @author JEDI-08
  *
  */
 public class SeatNotAvailableException extends Exception{

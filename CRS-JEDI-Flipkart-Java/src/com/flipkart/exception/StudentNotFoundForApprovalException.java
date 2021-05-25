@@ -5,7 +5,7 @@ package com.flipkart.exception;
 
 /**
  * Exception thrown when student is not found for approval
- * @author JEDI-03
+ * @author JEDI-08
  *
  */
 public class StudentNotFoundForApprovalException extends Exception {

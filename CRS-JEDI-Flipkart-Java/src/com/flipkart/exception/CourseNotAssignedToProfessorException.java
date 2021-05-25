@@ -5,7 +5,7 @@ package com.flipkart.exception;
 
 /**
  * Exception course is  not assigned to professor
- * @author JEDI-03
+ * @author JEDI-08
  *
  */
 public class CourseNotAssignedToProfessorException extends Exception{
