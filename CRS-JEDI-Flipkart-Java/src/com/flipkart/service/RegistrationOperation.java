@@ -7,6 +7,9 @@ import java.util.List;
 
 import com.flipkart.bean.Course;
 import com.flipkart.bean.StudentGrade;
+import com.flipkart.exception.CourseLimitExceedException;
+import com.flipkart.exception.CourseNotFoundException;
+import com.flipkart.exception.SeatNotAvailableException;
 
 /**
  * @author Ananya Varma
@@ -16,6 +19,7 @@ public class RegistrationOperation implements RegistrationInterface {
 
 	@Override
 	public boolean addCourse(String courseCode, int studentId, List<Course> courseList)
+
 			throws CourseNotFoundException, CourseLimitExceedException, SeatNotAvailableException, SQLException {
 		// TODO Auto-generated method stub
 		return false;

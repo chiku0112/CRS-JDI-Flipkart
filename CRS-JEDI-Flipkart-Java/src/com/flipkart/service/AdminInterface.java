@@ -5,6 +5,7 @@ import java.util.List;
 import com.flipkart.bean.Course;
 import com.flipkart.bean.Professor;
 import com.flipkart.bean.Student;
+import com.flipkart.exception.*;
 
 
 /**
@@ -53,7 +54,7 @@ public interface AdminInterface {
 	 * @throws ProfessorNotAddedException
 	 * @throws UserIdAlreadyInUseException 
 	 */
-	public void addProfessor(Professor professor) throws ProfessorNotAddedException, UserIdAlreadyInUseException;	
+	public void addProfessor(Professor professor) throws ProfessorNotAddedException, UserIdAlreadyInUseException;
 	
 	/**
 	 * Method to assign Course to a Professor
