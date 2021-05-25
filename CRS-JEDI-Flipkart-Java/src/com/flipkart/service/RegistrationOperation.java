@@ -3,7 +3,6 @@
  */
 package com.flipkart.service;
 
-import java.sql.SQLException;
 import java.util.List;
 
 import com.flipkart.bean.Course;

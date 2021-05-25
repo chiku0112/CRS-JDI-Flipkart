@@ -8,16 +8,12 @@ package com.flipkart.service;
  *
  */
 
-import java.sql.SQLException;
 import java.util.List;
 
 import com.flipkart.bean.Course;
 import com.flipkart.bean.Notification;
 import com.flipkart.bean.StudentGrade;
-import com.flipkart.constant.ModeOfPayment;
-import com.flipkart.exception.CourseLimitExceedException;
-import com.flipkart.exception.CourseNotFoundException;
-import com.flipkart.exception.SeatNotAvailableException;
+
 
 /**
  * 

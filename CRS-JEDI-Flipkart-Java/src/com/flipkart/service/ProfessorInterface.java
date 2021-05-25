@@ -4,7 +4,6 @@ import com.flipkart.bean.Course;
 import com.flipkart.bean.EnrolledStudent;
 import com.flipkart.exception.GradeNotAddedException;
 
-import java.sql.SQLException;
 import java.util.List;
 
 /**
