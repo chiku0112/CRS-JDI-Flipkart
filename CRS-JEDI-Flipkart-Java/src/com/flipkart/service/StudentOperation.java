@@ -3,6 +3,8 @@
  */
 package com.flipkart.service;
 
+import com.flipkart.exception.StudentNotRegisteredException;
+
 /**
  * @author Ananya Varma
  *
