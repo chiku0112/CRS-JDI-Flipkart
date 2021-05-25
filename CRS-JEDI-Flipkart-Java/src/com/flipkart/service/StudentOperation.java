@@ -3,6 +3,7 @@
  */
 package com.flipkart.service;
 
+import com.flipkart.constant.Gender;
 import com.flipkart.exception.StudentNotRegisteredException;
 
 /**
@@ -14,7 +15,7 @@ public class StudentOperation implements StudentInterface {
 
 	@Override
 	public int register(String name, String userID, String password, Gender gender, int batch, String branch,
-			String address, String country) throws StudentNotRegisteredException {
+						String address, String country) throws StudentNotRegisteredException {
 		// TODO Auto-generated method stub
 		return 0;
 	}

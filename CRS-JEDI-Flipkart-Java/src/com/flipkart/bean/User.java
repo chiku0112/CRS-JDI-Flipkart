@@ -3,6 +3,8 @@
  */
 package com.flipkart.bean;
 
+import com.flipkart.constant.Role;
+
 /**
  * @author Ananya Varma
  *
