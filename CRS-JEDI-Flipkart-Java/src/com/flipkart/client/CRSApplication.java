@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.flipkart;
+package com.flipkart.client;
 
 /**
  * @author Ananya Varma
@@ -11,6 +11,8 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
+import com.flipkart.client.AdminCRSMenu;
+import com.flipkart.client.StudentCRSMenu;
 import com.flipkart.constant.Gender;
 import com.flipkart.constant.NotificationType;
 import com.flipkart.constant.Role;
@@ -32,7 +34,8 @@ import com.flipkart.service.UserOperation;
  */
 public class CRSApplication {
 
-	static boolean loggedin = false;
+	 static boolean loggedin = false;
+
 	StudentInterface studentInterface=StudentOperation.getInstance();
 	UserInterface userInterface =UserOperation.getInstance();
 	NotificationInterface notificationInterface=NotificationOperation.getInstance();
@@ -137,7 +140,7 @@ public class CRSApplication {
 					break;
 				case PROFESSOR:
 					System.out.println(formattedDate + " Login Successful");
-					ProfessorCRSMenu professorMenu=new ProfessorCRSMenu();
+					com.flipkart.ProfessorCRSMenu professorMenu=new com.flipkart.ProfessorCRSMenu();
 					professorMenu.createMenu(userId);
 					
 					break;

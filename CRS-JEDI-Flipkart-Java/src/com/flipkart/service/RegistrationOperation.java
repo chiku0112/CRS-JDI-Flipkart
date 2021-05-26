@@ -48,7 +48,7 @@ public class RegistrationOperation implements RegistrationInterface {
 		{
 			throw new SeatNotAvailableException(courseCode);
 		}
-		else if(!StudentValidator.isValidCourseCode(courseCode, availableCourseList))
+		else if(!StudentValidator.isValidCourseCode(courseCode, courseList))
 		{
 			throw new CourseNotFoundException(courseCode);
 		}

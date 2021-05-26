@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.flipkart;
+package com.flipkart.client;
 
 /**
  * @author Ananya Varma
