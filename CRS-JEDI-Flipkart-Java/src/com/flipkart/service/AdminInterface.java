@@ -43,7 +43,7 @@ public interface AdminInterface {
 	 * Method to approve a Student 
 	 * @param studentId
 	 * @param studentList
-	 * @throws StudentNotFoundException 
+	 * @throws StudentNotFoundException
 	 * @throws StudentNotFoundForApprovalException 
 	 */
 	public void approveStudent(int studentId, List<Student> studentList) throws StudentNotFoundForApprovalException;
