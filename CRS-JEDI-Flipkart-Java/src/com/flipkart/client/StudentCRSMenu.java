@@ -101,7 +101,7 @@ public class StudentCRSMenu {
 						return;
 						
 				default:
-						logger.warn("***** Please enter a valid choice *****");
+					System.out.println("***** Please enter a valid choice *****");
 			}
 		}
 	}
@@ -346,7 +346,7 @@ public class StudentCRSMenu {
 			System.out.println(e.getMessage());
 		}
 		
-		logger.info(String.format("%-20s %-20s %-20s","COURSE CODE", "COURSE NAME", "GRADE"));
+		//(String.format("%-20s %-20s %-20s","COURSE CODE", "COURSE NAME", "GRADE"));
 		
 		if(grade_card.isEmpty())
 		{
@@ -391,7 +391,7 @@ public class StudentCRSMenu {
 			
 			if(ch.equals("y"))
 			{
-				logger.info("Select Mode of Payment:");
+				System.out.println("Select Mode of Payment:");
 				
 				int index = 1;
 				for(ModeOfPayment mode : ModeOfPayment.values())

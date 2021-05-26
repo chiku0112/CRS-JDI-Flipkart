@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.flipkart;
+package com.flipkart.client;
 
 /**
  * @author Ananya Varma
@@ -14,6 +14,7 @@ import java.util.Scanner;
 
 import com.flipkart.bean.Course;
 import com.flipkart.bean.EnrolledStudent;
+import com.flipkart.client.CRSApplication;
 import com.flipkart.exception.GradeNotAddedException;
 import com.flipkart.service.ProfessorInterface;
 import com.flipkart.service.ProfessorOperation;
@@ -107,7 +108,7 @@ public class ProfessorCRSMenu {
 		try
 		{
 			List<Course> coursesEnrolled=professorInterface.getCourses(profId);
-			logger.info(String.format("%20s %20s %20s","COURSE CODE","COURSE NAME","No. of Students  enrolled" ));
+			System.out.println(String.format("%20s %20s %20s","COURSE CODE","COURSE NAME","No. of Students  enrolled" ));
 			for(Course obj: coursesEnrolled)
 			{
 				System.out.println(String.format("%20s %20s %20s",obj.getCourseCode(), obj.getCourseName(),10- obj.getSeats()));
