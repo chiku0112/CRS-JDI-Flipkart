@@ -10,6 +10,7 @@ package com.flipkart.constant;
 public enum Gender {
 	
 	MALE(1),FEMALE(2),OTHER(3);
+	@SuppressWarnings("unused")
 	private final int gender;
 
 	/**

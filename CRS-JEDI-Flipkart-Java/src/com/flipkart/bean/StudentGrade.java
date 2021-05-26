@@ -7,6 +7,7 @@ package com.flipkart.bean;
  * @author Ananya Varma
  *
  */
+
 public class StudentGrade {
 	
 	private String courseCode;
@@ -14,59 +15,64 @@ public class StudentGrade {
 	private String grade;
 	
 	/**
-	 * @param courseCode
-	 * @param courseName
-	 * @param grade
+	 * Parameterized Constructor
+	 * @param courseCode: course code
+	 * @param courseName: course name
+	 * @param grade: grade 
 	 */
 	public StudentGrade(String courseCode, String courseName, String grade) {
-		super();
 		this.courseCode = courseCode;
 		this.courseName = courseName;
-		this.grade = grade;
+		this.setGrade(grade);
 	}
-
+	
 	/**
-	 * @return the courseCode
+	 * Method to get Course Code
+	 * @return Course Code
 	 */
 	public String getCourseCode() {
 		return courseCode;
 	}
-
+	
 	/**
-	 * @param courseCode the courseCode to set
+	 * Method to set Course Code
+	 * @param courseCode
 	 */
 	public void setCourseCode(String courseCode) {
 		this.courseCode = courseCode;
 	}
-
+	
 	/**
-	 * @return the courseName
+	 * Method to get Course Name
+	 * @return Course Name
 	 */
 	public String getCourseName() {
 		return courseName;
 	}
-
+	
 	/**
-	 * @param courseName the courseName to set
+	 * Method to set Course Name
+	 * @param courseName
 	 */
 	public void setCourseName(String courseName) {
 		this.courseName = courseName;
 	}
 
 	/**
-	 * @return the grade
+	 * Method to get grade 
+	 * @return Grade
 	 */
 	public String getGrade() {
 		return grade;
 	}
 
 	/**
-	 * @param grade the grade to set
+	 * Method to set grade 
+	 * @param grade
 	 */
 	public void setGrade(String grade) {
 		this.grade = grade;
 	}
-	
 	
 
 }

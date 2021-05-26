@@ -16,11 +16,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-import com.flipkart.bean.Student;
-import com.flipkart.client.CRSApplication;
 import com.flipkart.constant.SQLQueriesConstants;
-import com.flipkart.exception.StudentNotRegisteredException;
-import com.flipkart.service.StudentOperation;
 import com.flipkart.utils.DBUtils;
 
 

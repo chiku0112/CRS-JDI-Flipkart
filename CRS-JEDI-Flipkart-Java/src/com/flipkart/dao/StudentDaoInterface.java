@@ -3,12 +3,6 @@
  */
 package com.flipkart.dao;
 
-/**
- * @author Ananya Varma
- *
- */
-import java.sql.SQLException;
-
 import com.flipkart.bean.Student;
 import com.flipkart.exception.StudentNotRegisteredException;
 

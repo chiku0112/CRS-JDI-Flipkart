@@ -6,30 +6,27 @@ package com.flipkart.bean;
 import java.util.Date;
 
 /**
+ * 
  * @author Ananya Varma
- *
+ * Admin Class
+ * 
  */
-
-import java.util.Date;
-
-public class Admin {
-	
+public class Admin extends User{
 	private Date dateOfJoining;
-
+	
 	/**
-	 * @return the dateOfJoining
+	 * Method to get Date of joining
+	 * @return Date of joining
 	 */
 	public Date getDateOfJoining() {
 		return dateOfJoining;
 	}
 
 	/**
-	 * @param dateOfJoining the dateOfJoining to set
+	 * Method to set Date of joining
+	 * @param dateOfJoining
 	 */
 	public void setDateOfJoining(Date dateOfJoining) {
 		this.dateOfJoining = dateOfJoining;
 	}
-
-	
-
 }

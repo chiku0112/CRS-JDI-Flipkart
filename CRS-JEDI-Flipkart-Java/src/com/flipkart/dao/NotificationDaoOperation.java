@@ -15,14 +15,10 @@ import com.flipkart.constant.NotificationType;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.UUID;
 
-import com.flipkart.constant.ModeOfPayment;
-import com.flipkart.constant.NotificationType;
 import com.flipkart.constant.SQLQueriesConstants;
-import com.flipkart.service.NotificationOperation;
 import com.flipkart.utils.DBUtils;
 
 public class NotificationDaoOperation implements NotificationDaoInterface{
