@@ -1,12 +1,8 @@
 /**
  * 
  */
-package com.flipkart;
+package com.flipkart.client;
 
-/**
- * @author Ananya Varma
- *
- */
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
@@ -25,7 +21,7 @@ import com.flipkart.service.UserOperation;
 
 /**
  * 
- * @author JEDI-03
+ * @author Ananya Varma
  * This class is used as the main entry point of the application
  * In main menu to login, register are displayed
  * 
@@ -244,3 +240,4 @@ public class CRSApplication {
 		}
 	}
 }
+

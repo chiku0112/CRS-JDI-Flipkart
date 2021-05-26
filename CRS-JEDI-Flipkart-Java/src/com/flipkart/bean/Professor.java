@@ -7,38 +7,44 @@ package com.flipkart.bean;
  * @author Ananya Varma
  *
  */
-public class Professor {
-	
+public class Professor extends User{
 	private String department;
 	private String designation;
 	
 	/**
-	 * @return the department
+	 * Constructor
 	 */
-	public String getDepartment() {
-		return department;
-	}
+	public Professor() {}
 	
 	/**
-	 * @param department the department to set
-	 */
-	public void setDepartment(String department) {
-		this.department = department;
-	}
-	
-	/**
-	 * @return the designation
+	 * 
+	 * @return: get the designation
 	 */
 	public String getDesignation() {
 		return designation;
 	}
 	
 	/**
-	 * @param designation the designation to set
+	 * 
+	 * @param designation: get the designation
 	 */
 	public void setDesignation(String designation) {
 		this.designation = designation;
 	}
 	
+	/**
+	 * 
+	 * @return departmet
+	 */
+	public String getDepartment() {
+		return department;
+	}
 	
+	/**
+	 * 
+	 * @param department: department for the professor
+	 */
+	public void setDepartment(String department) {
+		this.department = department;
+	}
 }

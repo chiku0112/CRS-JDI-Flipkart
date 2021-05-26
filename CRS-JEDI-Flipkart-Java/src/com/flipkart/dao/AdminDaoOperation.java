@@ -148,7 +148,7 @@ public class AdminDaoOperation implements AdminDaoInterface{
 			while(resultSet.next()) {
 				
 				Student user = new Student();
-				user.setUserID(resultSet.getString(1));
+				user.setUserId(resultSet.getString(1));
 				user.setName(resultSet.getString(2));
 				user.setPassword(resultSet.getString(3));
 				user.setRole(Role.stringToName(resultSet.getString(4)));
@@ -219,7 +219,7 @@ public class AdminDaoOperation implements AdminDaoInterface{
 			String sql = SQLQueriesConstants.ADD_USER_QUERY;
 			statement = connection.prepareStatement(sql);
 			
-			statement.setString(1, user.getUserID());
+			statement.setString(1, user.getUserId());
 			statement.setString(2, user.getName());
 			statement.setString(3, user.getPassword());
 			statement.setString(4, user.getRole().toString());
@@ -231,7 +231,7 @@ public class AdminDaoOperation implements AdminDaoInterface{
 			System.out.println(row + " user(s) added.");
 			if(row == 0) {
 				System.out.println("User with userId: " + user.getUserId() + " could not be added.");
-				throw new UserNotAddedException(user.getUserID()); 
+				throw new UserNotAddedException(user.getUserId()); 
 			}
 
 			System.out.println("User with userId: " + user.getUserId() + " added.");
@@ -239,7 +239,7 @@ public class AdminDaoOperation implements AdminDaoInterface{
 		}catch(SQLException se) {
 			
 			System.out.println(se.getMessage());
-			throw new UserIdAlreadyInUseException(user.getUserID());
+			throw new UserIdAlreadyInUseException(user.getUserId());
 			
 		}
 		
@@ -261,7 +261,7 @@ public class AdminDaoOperation implements AdminDaoInterface{
 		}catch (UserNotAddedException e) {
 			
 			System.out.println(e.getMessage());
-			throw new ProfessorNotAddedException(professor.getUserID());
+			throw new ProfessorNotAddedException(professor.getUserId());
 			
 		}catch (UserIdAlreadyInUseException e) {
 			
@@ -277,7 +277,7 @@ public class AdminDaoOperation implements AdminDaoInterface{
 			String sql = SQLQueriesConstants.ADD_PROFESSOR_QUERY;
 			statement = connection.prepareStatement(sql);
 			
-			statement.setString(1, professor.getUserID());
+			statement.setString(1, professor.getUserId());
 			statement.setString(2, professor.getDepartment());
 			statement.setString(3, professor.getDesignation());
 			int row = statement.executeUpdate();
@@ -285,7 +285,7 @@ public class AdminDaoOperation implements AdminDaoInterface{
 			System.out.println(row + " professor added.");
 			if(row == 0) {
 				System.out.println("Professor with professorId: " + professor.getUserId() + " could not be added.");
-				throw new ProfessorNotAddedException(professor.getUserID());
+				throw new ProfessorNotAddedException(professor.getUserId());
 			}
 			
 			
@@ -294,7 +294,7 @@ public class AdminDaoOperation implements AdminDaoInterface{
 		}catch(SQLException se) {
 			
 			System.out.println(se.getMessage());
-			throw new UserIdAlreadyInUseException(professor.getUserID());
+			throw new UserIdAlreadyInUseException(professor.getUserId());
 			
 		} 
 		
@@ -392,7 +392,7 @@ public class AdminDaoOperation implements AdminDaoInterface{
 			while(resultSet.next()) {
 				
 				Professor professor = new Professor();
-				professor.setUserID(resultSet.getString(1));
+				professor.setUserId(resultSet.getString(1));
 				professor.setName(resultSet.getString(2));
 				professor.setGender(Gender.stringToGender(resultSet.getString(3)));
 				professor.setDepartment(resultSet.getString(4));

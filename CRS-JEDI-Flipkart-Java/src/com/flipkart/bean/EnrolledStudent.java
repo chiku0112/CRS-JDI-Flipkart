@@ -8,61 +8,68 @@ package com.flipkart.bean;
  *
  */
 public class EnrolledStudent {
-	
 	private String courseCode;
 	private String courseName;
-	private int studentID;
-	
-	
-	/**
-	 * @param courseCode
-	 * @param courseName
-	 * @param studentID
-	 */
-	public EnrolledStudent(String courseCode, String courseName, int studentID) {
-		super();
-		this.courseCode = courseCode;
-		this.courseName = courseName;
-		this.studentID = studentID;
-	}
+	private int studentId;
 	
 	/**
-	 * @return the courseCode
+	 * Method to get Course Code
+	 * @return Course Code
 	 */
 	public String getCourseCode() {
 		return courseCode;
 	}
+	
 	/**
-	 * @param courseCode the courseCode to set
+	 * Method to set Course Code
+	 * @param courseCode: course code 
 	 */
 	public void setCourseCode(String courseCode) {
 		this.courseCode = courseCode;
 	}
+	
 	/**
-	 * @return the courseName
+	 * Method to get Course Name
+	 * @return Course Name: course name
 	 */
 	public String getCourseName() {
 		return courseName;
 	}
+	
 	/**
-	 * @param courseName the courseName to set
+	 * Method to set Course Name
+	 * @param courseName: course name
 	 */
 	public void setCourseName(String courseName) {
 		this.courseName = courseName;
 	}
+	
 	/**
-	 * @return the studentID
+	 * Method to get Student Id of student enrolled in the course
+	 * @return Student Id: student id
 	 */
-	public int getStudentID() {
-		return studentID;
-	}
-	/**
-	 * @param studentID the studentID to set
-	 */
-	public void setStudentID(int studentID) {
-		this.studentID = studentID;
+	public int getStudentId() {
+		return studentId;
 	}
 	
+	/**
+	 * Method to set Student Id of student enrolled in the course
+	 * @param studentId
+	 */
+	public void setStudentId(int studentId) {
+		this.studentId = studentId;
+	}
 	
-
+	/**
+	 * Parameterized constructor
+	 * @param courseCode
+	 * @param courseName
+	 * @param studentId
+	 */
+	public EnrolledStudent(String courseCode, String courseName, int studentId) {
+		super();
+		this.courseCode = courseCode;
+		this.courseName = courseName;
+		this.studentId = studentId;
+	}
 }

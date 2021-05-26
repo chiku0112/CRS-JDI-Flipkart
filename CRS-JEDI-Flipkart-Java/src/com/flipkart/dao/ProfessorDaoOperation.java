@@ -17,13 +17,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.List;
-
-import com.flipkart.bean.Course;
-import com.flipkart.bean.EnrolledStudent;
-import com.flipkart.bean.Student;
 import com.flipkart.constant.SQLQueriesConstants;
-import com.flipkart.service.StudentOperation;
 import com.flipkart.utils.DBUtils;
 
 
